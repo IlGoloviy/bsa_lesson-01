@@ -1,0 +1,42 @@
+footer {
+    background: #f0f0f0;
+
+    & .footer-content {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+
+        &-logo {
+            height: 150px;
+            margin: 15px;
+
+            & > img {
+                height: 100%;
+            }
+        }
+
+        &-copyright,
+        &-email {
+            color: #c8c8c8;
+            margin: 10px;
+        }
+    }
+}
+
+@media only screen and (max-width : 701px) {
+    footer .footer-content {
+
+        &-logo {
+            height: 50px;
+        }
+    }
+}
+
+@media only screen and (max-width : 501px) {
+    footer .footer-content {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
